@@ -28,7 +28,7 @@ for (let i = 0; i < 26; i++) {
     topRow.appendChild(div)
 }
 
-for (let i = 1; i <= 200; i++) {
+for (let i = 1; i <= 3000; i++) {
     let div = document.createElement("div");
     div.setAttribute("class", "cell");
     div.textContent = i;
@@ -36,7 +36,7 @@ for (let i = 1; i <= 200; i++) {
 }
 // 2 d loop -> columns*rows
 
-for (let i = 0; i < 200; i++) {
+for (let i = 0; i < 3000; i++) {
     let row = document.createElement("div");
     row.setAttribute("class", "row");
     for (let j = 0; j < 26; j++) {
@@ -55,7 +55,7 @@ for (let i = 0; i < 200; i++) {
 let sheetsDb = [];
 function initDB() {
     let db = [];
-    for (let i = 0; i < 200; i++) {
+    for (let i = 0; i < 3000; i++) {
         let rowArr = [];
         for (let j = 0; j < 26; j++) {
             let cellObject = {
@@ -214,7 +214,7 @@ function sheetOpenHandler() {
 }
 // create sheet logic
 function setinitUI() {
-    for (let i = 0; i < 200; i++) {
+    for (let i = 0; i < 3000; i++) {
         for (let j = 0; j < 26; j++) {
             //    set all the properties on ui with matching rid,cid
             let cellObject = db[i][j];
